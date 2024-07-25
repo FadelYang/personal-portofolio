@@ -11,11 +11,11 @@
                 </div>
             </div>
             {{-- latest works section --}}
-            <div class="max-w-5xl mx-auto space-y-14">
+            <div class="max-w-5xl mx-auto space-y-14 mb-14">
                 <h1 class="text-4xl font-black text-center">My Latest Work</h1>
                 <div class="flex flex-wrap items-center justify-center gap-3">
                     @for ($i = 0; $i < 9; $i++)
-                        <div class="rounded-none shadow-xl card bg-base-100 w-80">
+                        <div class="rounded-none shadow-xl card bg-base-100 w-80" data-aos="fade-up">
                             <figure>
                                 <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                                     alt="Shoes" />
@@ -33,7 +33,7 @@
                         </div>
                     @endfor
                 </div>
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center" data-aos="fade-up">
                     <button class="text-white btn btn-neutral">View More</button>
                 </div>
             </div>

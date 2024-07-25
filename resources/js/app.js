@@ -2,6 +2,13 @@ import "./bootstrap";
 
 import Typed from "typed.js";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    AOS.init();
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     new Typed("#headingHero", {
         strings: ["👋 Hello, I’m Fadel"],
