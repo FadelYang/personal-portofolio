@@ -2,7 +2,7 @@
     <x-slot name="slot">
         <main class="container relative h-screen mx-auto">
             {{-- hero section --}}
-            <div class="flex h-[calc(100vh-80px)]">
+            <div class="flex h-[calc(100vh-0px)]">
                 <div class="m-auto space-y-12 text-center">
                     <h1 class="text-4xl font-black text-black h1" id="headingHero"></h1>
                     <h2 class="max-w-2xl text-4xl font-black text-black h2 h1" id="secondaryHeadingHero">
@@ -14,7 +14,7 @@
             <div class="max-w-5xl mx-auto space-y-14 mb-14">
                 <h1 class="text-4xl font-black text-center">My Latest Work</h1>
                 <div class="flex flex-wrap items-center justify-center gap-3">
-                    @for ($i = 0; $i < 9; $i++)
+                    @for ($i = 0; $i < 6; $i++)
                         <div class="rounded-none shadow-xl card bg-base-100 w-80" data-aos="fade-up">
                             <figure>
                                 <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
