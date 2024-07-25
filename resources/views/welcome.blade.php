@@ -16,8 +16,22 @@
 </head>
 
 
-<body class="container mx-auto">
+<body class="">
     @include('components.guest-header')
+
+    <main>
+        {{-- hero section --}}
+        <div class="flex h-[calc(100vh-80px)]">
+            <div class="m-auto space-y-12 text-center">
+                <h1 class="text-4xl font-black text-black h1">👋 Hello, I’m Fadel</h1>
+                <h2 class="max-w-2xl text-4xl font-black text-black h2 h1">Fullstack web developer 🌐💻 based in
+                    Jakarta,
+                    Indonesia
+                </h2>
+                <button class="text-white btn btn-neutral">See My Works</button>
+            </div>
+        </div>
+    </main>
 </body>
 
 <script>

@@ -1,4 +1,4 @@
-<nav class="relative flex items-center justify-between px-4 py-4 bg-white">
+<nav class="container relative flex items-center justify-between px-4 py-4 mx-auto bg-white">
     <a class="text-3xl font-bold leading-none" href="#">
         F
     </a>
