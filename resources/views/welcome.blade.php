@@ -11,11 +11,11 @@
                 </div>
             </div>
             {{-- latest works section --}}
-            <div class="space-y-14 snap-start">
+            <div class="max-w-5xl mx-auto space-y-14 snap-start">
                 <h1 class="text-4xl font-black text-center">My Latest Work</h1>
                 <div class="flex flex-wrap items-center justify-center gap-3">
                     @for ($i = 0; $i < 9; $i++)
-                        <div class="rounded-none shadow-xl card bg-base-100 w-96">
+                        <div class="rounded-none shadow-xl card bg-base-100 w-80">
                             <figure>
                                 <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                                     alt="Shoes" />
