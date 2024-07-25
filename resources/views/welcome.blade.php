@@ -1,8 +1,8 @@
 <x-guest-layout>
     <x-slot name="slot">
-        <main class="container relative h-screen mx-auto overflow-y-auto snap-y snap-mandatory snap-container">
+        <main class="container relative h-screen mx-auto">
             {{-- hero section --}}
-            <div class="flex h-[calc(100vh-80px)] snap-start">
+            <div class="flex h-[calc(100vh-80px)]">
                 <div class="m-auto space-y-12 text-center">
                     <h1 class="text-4xl font-black text-black h1" id="headingHero"></h1>
                     <h2 class="max-w-2xl text-4xl font-black text-black h2 h1" id="secondaryHeadingHero">
@@ -11,7 +11,7 @@
                 </div>
             </div>
             {{-- latest works section --}}
-            <div class="max-w-5xl mx-auto space-y-14 snap-start">
+            <div class="max-w-5xl mx-auto space-y-14">
                 <h1 class="text-4xl font-black text-center">My Latest Work</h1>
                 <div class="flex flex-wrap items-center justify-center gap-3">
                     @for ($i = 0; $i < 9; $i++)
@@ -35,6 +35,17 @@
                 </div>
                 <div class="flex items-center justify-center">
                     <button class="text-white btn btn-neutral">View More</button>
+                </div>
+            </div>
+            {{-- collab section --}}
+            <div class="flex">
+                <div class="m-auto space-y-12 text-center">
+                    <h1 class="text-4xl font-black text-black h1">I'm Open For Collaboration</h1>
+                    <h2 class="max-w-lg text-4xl font-black text-black h2 h1">
+                        Need someone to convert your design into fully operate web? or need manpower for your next
+                        project? I’m here to give you a hand 😉
+                    </h2>
+                    <button class="text-white btn btn-neutral">Contact Me</button>
                 </div>
             </div>
         </main>
