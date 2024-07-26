@@ -2,10 +2,10 @@
     <x-slot name="slot">
         <main class="container relative h-screen mx-auto">
             {{-- hero section --}}
-            <div class="flex h-[calc(100vh-0px)]">
+            <div class="flex h-[calc(100vh-0px)] mx-5">
                 <div class="m-auto space-y-12 text-center">
-                    <h1 class="text-4xl font-black text-black h1" id="headingHero"></h1>
-                    <h2 class="max-w-2xl text-4xl font-black text-black h2 h1" id="secondaryHeadingHero">
+                    <h1 class="text-2xl font-black text-black lg:text-4xl h1" id="headingHero"></h1>
+                    <h2 class="max-w-2xl text-2xl font-black text-black lg:text-4xl h2 h1" id="secondaryHeadingHero">
                     </h2>
                     <button class="text-white btn btn-neutral">See My Works</button>
                 </div>
@@ -38,8 +38,8 @@
                 </div>
             </div>
             {{-- collab section --}}
-            <div class="flex h-screen mx-auto gap-7 lg:max-w-5xl">
-                <div class="hidden m-auto lg:block">
+            <div class="flex mx-auto lg:h-screen gap-7 lg:max-w-5xl">
+                <div class="hidden m-auto lg:block" data-aos="fade-right">
                     <svg width="556" height="581" viewBox="0 0 556 581" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -50,9 +50,10 @@
                             fill="black" />
                     </svg>
                 </div>
-                <div class="m-auto space-y-8 text-center lg:text-left">
-                    <h1 class="text-4xl font-black text-bold h1">I'm Open For Collaboration</h1>
-                    <h2 class="max-w-lg text-2xl text-black h2">
+                <div class="m-auto space-y-8 text-center lg:text-left" data-aos="fade-up">
+                    <h1 class="mx-5 text-2xl font-black lg:mx-0 lg:text-4xl text-bold h1">I'm Open For Collaboration
+                    </h1>
+                    <h2 class="max-w-lg mx-5 text-2xl text-black lg:mx-0 h2">
                         Need someone to convert your design into fully operate web? or need manpower for your next
                         project? I’m here to give you a hand 😉
                     </h2>
