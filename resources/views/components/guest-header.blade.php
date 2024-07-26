@@ -1,26 +1,28 @@
-<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-4 mx-auto bg-white lg:max-w-5xl">
-    <a class="text-3xl font-bold leading-none" href="#">
-        F
-    </a>
-    <div class="lg:hidden">
-        <button class="flex items-center p-3 text-black navbar-burger">
-            <svg class="block w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Mobile menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-        </button>
-    </div>
-    <ul
-        class="absolute hidden space-x-10 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-24">
-        <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Home</a></li>
-        <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Works</a></li>
-        <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Blogs</a></li>
-    </ul>
-    <div class="hidden lg:block">
-        <a class="font-bold text-white transition duration-200 hidden-sm btn btn-neutral" href="#">Contact
-            Me!</a>
-    </div>
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white">
+    <div class="flex items-center justify-between px-4 py-4 mx-auto lg:max-w-5xl">
 
+        <a class="text-3xl font-bold leading-none" href="#">
+            F
+        </a>
+        <div class="lg:hidden">
+            <button class="flex items-center p-3 text-black navbar-burger">
+                <svg class="block w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul
+            class="absolute hidden space-x-10 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-24">
+            <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Home</a></li>
+            <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Works</a></li>
+            <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Blogs</a></li>
+        </ul>
+        <div class="hidden lg:block">
+            <a class="font-bold text-white transition duration-200 hidden-sm btn btn-neutral" href="#">Contact
+                Me!</a>
+        </div>
+    </div>
 </nav>
 <div class="relative z-50 hidden navbar-menu">
     <div class="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop"></div>
