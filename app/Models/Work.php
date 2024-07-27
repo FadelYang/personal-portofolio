@@ -11,6 +11,10 @@ class Work extends Model
     use HasFactory;
     use HasUuids;
 
+    protected $guarded = [
+        'id'
+    ];
+
     public function workCategories()
     {
         return $this->belongsToMany(WorkCategory::class);

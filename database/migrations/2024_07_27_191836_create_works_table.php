@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title')->require()->unique();
             $table->string('slug')->require()->unique();
             $table->string('subtitle')->nullable();
+            $table->string('thumbnail')->require();
             $table->string('short_description')->require();
             $table->text('content')->require();
             $table->string('github_repository_link')->nullable();
