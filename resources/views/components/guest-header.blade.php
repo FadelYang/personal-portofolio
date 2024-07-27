@@ -24,7 +24,7 @@
         </div>
     </div>
 </nav>
-<div class="relative z-50 hidden navbar-menu">
+<div class="container relative z-50 hidden navbar-menu">
     <div class="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop"></div>
     <nav class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
         <div class="flex items-center mb-8">
