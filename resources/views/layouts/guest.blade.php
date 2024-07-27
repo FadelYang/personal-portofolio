@@ -7,7 +7,9 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'fadel.dev | Fullstack Web Developer Based in Jakarta, Indonesia') }}</title>
+    <title>
+        {{ config('app.name' . ' | Fullstack Web Developer Based in Jakarta, Indonesia', 'fadel.dev | Fullstack Web Developer Based in Jakarta, Indonesia') }}
+    </title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
