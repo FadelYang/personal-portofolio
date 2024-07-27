@@ -14,9 +14,12 @@
         </div>
         <ul
             class="absolute hidden space-x-10 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-24">
-            <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Home</a></li>
-            <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Works</a></li>
-            <li><a href="#" class="text-xl font-black text-black hover:text-black/70">Blogs</a></li>
+            <li><a href="{{ route('welcome') }}" class="text-xl font-black text-black hover:text-black/70"
+                    wire:navigate>Home</a></li>
+            <li><a href="{{ route('works.get') }}" wire:navigate
+                    class="text-xl font-black text-black hover:text-black/70">Works</a></li>
+            <li><a href="{{ route('blogs.get') }}" wire:navigate
+                    class="text-xl font-black text-black hover:text-black/70">Blogs</a></li>
         </ul>
         <div class="hidden lg:block">
             <a class="font-bold text-white transition duration-200 hidden-sm btn btn-neutral" href="#">Contact
@@ -41,11 +44,14 @@
         </div>
         <div>
             <ul>
-                <li class="mb-1"><a href="#" class="text-xl font-black text-black hover:text-black/70">Home</a>
+                <li class="mb-1"><a href="{{ route('welcome') }}"
+                        class="text-xl font-black text-black hover:text-black/70" wire:navigate>Home</a>
                 </li>
-                <li class="mb-1"><a href="#" class="text-xl font-black text-black hover:text-black/70">Works</a>
+                <li class="mb-1"><a href="{{ route('works.get') }}" wire:navigate
+                        class="text-xl font-black text-black hover:text-black/70">Works</a>
                 </li>
-                <li class="mb-1"><a href="#" class="text-xl font-black text-black hover:text-black/70">Blogs</a>
+                <li class="mb-1"><a href="{{ route('blogs.get') }}" wire:navigate
+                        class="text-xl font-black text-black hover:text-black/70">Blogs</a>
                 </li>
             </ul>
         </div>
