@@ -20,7 +20,9 @@ class WorkResource extends Resource
 {
     protected static ?string $model = Work::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-computer-desktop';
+
+    protected static ?string $navigationGroup = 'Works';
 
     public static function form(Form $form): Form
     {
