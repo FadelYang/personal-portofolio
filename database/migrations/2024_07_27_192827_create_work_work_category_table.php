@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('work_work_category', function (Blueprint $table) {
             $table->id();
-            $table->foreignUuid('work_id')->references('id')->on('works');
-            $table->foreignUuid('work_category_id')->references('id')->on('work_categories');
+            $table->foreignUuid('work_id')->references('id')->on('works')->onDelete('cascade');
+            $table->foreignUuid('work_category_id')->references('id')->on('work_categories')->onDelete('cascade');
         });
     }
 

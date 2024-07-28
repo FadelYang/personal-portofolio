@@ -28,6 +28,7 @@ class WorkResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->live(onBlur: true)
+                    ->unique(ignoreRecord: true)
                     ->afterStateUpdated(function (Get $get, Set $set, ?string $old, ?string $state) {
                         if (($get('slug') ?? '') !== Str::slug($old)) {
                             return;
@@ -40,15 +41,15 @@ class WorkResource extends Resource
                 Forms\Components\TextInput::make('subtitle')
                     ->maxLength(255)
                     ->default(null),
-                Forms\Components\FileUpload::make('image')
+                Forms\Components\FileUpload::make('thumbnail')
                     ->image()
-                    ->directory('work_images')
+                    ->directory('thumbnail')
                     ->preserveFilenames()
                     ->fetchFileInformation(false)
                     ->columnSpan(12),
                 Forms\Components\Textarea::make('short_description')
                     ->required()
-                    ->unique()
+                    ->unique(ignoreRecord: true)
                     ->columnSpan(12)
                     ->maxLength(255),
                 Forms\Components\RichEditor::make('content')
@@ -70,8 +71,9 @@ class WorkResource extends Resource
                         'underline',
                         'undo',
                     ]),
-                Forms\Components\Select::make('Categories')
+                Forms\Components\Select::make('workCategories')
                     ->relationship('workCategories', 'name')
+                    ->preload()
                     ->multiple(),
                 Forms\Components\TextInput::make('github_repository_link')
                     ->maxLength(255)
