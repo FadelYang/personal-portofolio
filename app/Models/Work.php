@@ -17,6 +17,6 @@ class Work extends Model
 
     public function workCategories()
     {
-        return $this->belongsToMany(WorkCategory::class);
+        return $this->belongsToMany(WorkCategory::class, 'work_work_category');
     }
 }
